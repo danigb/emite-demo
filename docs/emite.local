@@ -1,0 +1,19 @@
+<VirtualHost *:80>
+  ServerName emite.local
+  RailsEnv stagging 
+
+  RewriteEngine On
+  RewriteRule ^/$ /cache/index.html [QSA]
+  RewriteRule ^([^.]+)$ /cache/$1.html [QSA]
+
+  DocumentRoot /home/dani/Sites/emite-demo/public
+
+  ErrorLog emite-demo.log
+  <Directory "/home/dani/Sites/emite-demo/public" >
+    Order allow,deny
+    Allow from all
+  </Directory>
+
+
+</VirtualHost>
+
