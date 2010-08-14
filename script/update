@@ -1,0 +1,7 @@
+#! /bin/bash
+
+rm -rf /home/dani/Sites/emite-demo/public/demos/ExampleXmppSession
+cp -r /home/dani/workspace/emite-lib/war/ExampleXmppSession /home/dani/Sites/emite-demo/public/demos/
+rm -rf /home/dani/Sites/emite-demo/public/demos/HablarHtml
+cp -r /home/dani/workspace/hablar/war/HablarHtml /home/dani/Sites/emite-demo/public/demos/
+echo "DONE."

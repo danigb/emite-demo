@@ -6,10 +6,10 @@
   RewriteRule ^/$ /cache/index.html [QSA]
   RewriteRule ^([^.]+)$ /cache/$1.html [QSA]
 
-  DocumentRoot /home/dani/Sites/emite-demo/public
+	DocumentRoot /home/dani/Sites//public
 
-  ErrorLog emite-demo.log
-  <Directory "/home/dani/Sites/emite-demo/public" >
+  ErrorLog flo68.log
+  <Directory "/home/dani/Sites/flo68/public" >
     Order allow,deny
     Allow from all
   </Directory>
