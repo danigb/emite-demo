@@ -1,0 +1,5 @@
+#! /bin/bash
+
+rm -rf /Users/dani/Sites/emite-demo/public/demos/PingPongExample
+cp -r /Users/dani/Emite/emite-lib/war/PingPongExamples/ /Users/dani/Sites/emite-demo/public/demos/
+echo "DONE."
